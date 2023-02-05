@@ -151,15 +151,11 @@ foreach (var user in users)
             string? pan;
             Console.Write("Enter PAN: ");
             pan = Console.ReadLine();
-
-            bool cardfound = false;
-
+            
             foreach (User use in users)
             {
                 if (pan == use.BankCard.PAN)
                 {
-                    cardfound = true;
-
                     decimal amount;
                     Console.Write("Enter amount: ");
                     amount = Convert.ToDecimal(Console.ReadLine());
